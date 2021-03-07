@@ -31,10 +31,21 @@
     <div class="item">8</div>
     <div class="item">9</div>
     <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
 
   </div>
 
   <style>
+    .flipper {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+
+    .flipper.flip {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
   </style>
 </body>
 
